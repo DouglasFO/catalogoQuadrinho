@@ -12,6 +12,7 @@ public class Pessoa implements Serializable{
     private String cpf;
     private String email;
     private Endereco endereco;
+    private Usuario usuario;
 
     public int getId() {
         return id;
@@ -52,6 +53,16 @@ public class Pessoa implements Serializable{
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+    
+    
         
 
     @Override

@@ -2,6 +2,7 @@
 package br.edu.iff.catalogoQuadrinho.model;
 
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 
 
@@ -11,7 +12,7 @@ public class Colecao implements Serializable{
     private int id;
     private Pessoa pessoa;
     private String nome;
-    private Date data_inicio;
+    private Calendar data_inicio;
     private String observacao;
 
     public int getId() {
@@ -37,15 +38,7 @@ public class Colecao implements Serializable{
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    public Date getData_inicio() {
-        return data_inicio;
-    }
-
-    public void setData_inicio(Date data_inicio) {
-        this.data_inicio = data_inicio;
-    }
-
+    
     public String getObservacao() {
         return observacao;
     }
@@ -54,6 +47,14 @@ public class Colecao implements Serializable{
         this.observacao = observacao;
     }
 
+    public Calendar getData_inicio() {
+        return data_inicio;
+    }
+
+    public void setData_inicio(Calendar data_inicio) {
+        this.data_inicio = data_inicio;
+    }
+    
     @Override
     public int hashCode() {
         int hash = 5;

@@ -9,8 +9,7 @@ import java.io.Serializable;
 
 
 public class Usuario implements Serializable{
-    private int id;
-    private Pessoa pessoa;
+    private int id;   
     private String login;
     private String senha;
     private int nivel;
@@ -46,17 +45,7 @@ public class Usuario implements Serializable{
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
-
-    public Pessoa getPessoa() {
-        return pessoa;
-    }
-
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
-    }
     
-    
-
     @Override
     public int hashCode() {
         int hash = 3;
